@@ -1,6 +1,14 @@
 /* Set the page border*/
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* Visited links colour*/
+
+a:visited {
+    color: inherit; /* keeps the original colour */
+}
+
+
+
 /* Navigation */
 nav { 
     background-color: #333;
@@ -101,4 +109,90 @@ nav {
     font-size: 1.1rem;
     color: white;
     margin-bottom: 1rem;
+}
+
+/* Sections */
+section {
+    padding: 5rem 2rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #6b7280;
+}
+
+/* About */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.about-extra {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+}
+
+.about-icon {
+    width: 40px;
+    height: 40px;
+    background: #ede9fe;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4f46e5;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.about-icon a:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.about-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+}
+
+.about-item-heading {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 20%;
+}
+
+.about-item-info {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #1a1a2e;
 }
