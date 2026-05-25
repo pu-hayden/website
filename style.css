@@ -1,3 +1,26 @@
+/* Font */
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Outfit', sans-serif;
+}
+
+h1 {
+    color: white; /* normal colour */
+    transition: all 0.3s;
+}
+
+h1:hover {
+    background: linear-gradient(135deg, #1e1b4b 0%, #5c0ae8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
 /* Scrolling */
 
 html {
@@ -24,7 +47,7 @@ nav {
     align-items: center;
     padding: 0;
     height: 60px;
-    border-bottom: 1px solid #e9ecef;
+    border-bottom: none;
     z-index: 1000;
     position: fixed;
 }
@@ -111,6 +134,14 @@ nav {
 .intro-subheading {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    
+}
+
+.intro-subheading:hover {
+    background: linear-gradient(135deg, #1e1b4b 0%, #5c0ae8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .intro-info {
@@ -118,6 +149,14 @@ nav {
     color: white;
     margin-bottom: 1rem;
 }
+
+.intro-info:hover {
+    background: linear-gradient(135deg, #1e1b4b 0%, #5c0ae8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 
 /* Sections */
 section {
@@ -139,6 +178,13 @@ section {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: #6b7280;
+}
+
+.section-label {
+    font-size: 1rem;
+    color:#764ba2;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
 }
 
 /* About */
@@ -247,6 +293,21 @@ section {
     margin-bottom: 1rem;
 }
 
+.skills-item-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.icon-purple { background: #ede9fe; color: #4f46e5; }
+.icon-blue { background: #e0f2fe; color: #0284c7; }
+.icon-orange { background: #ffedd5; color: #f97316; }
+
 .skills-tag {
     display: flex;
     flex-wrap: wrap;
@@ -268,7 +329,7 @@ section {
 .projects-grid {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .projects-item {
@@ -281,6 +342,7 @@ section {
     gap: 1rem;
     align-items: start;
     transition: transform 0.2s;
+    max-width: 700px;
 }
 
 .projects-item:hover { transform: translateY(-5px); }
@@ -289,8 +351,8 @@ section {
     font-size: 0.7rem;
     padding: 0.25rem 0.6rem;
     border-radius: 50px;
-    background: #f3f4f6;
-    color: #4b5563;
+    background: #a282c2;
+    color: white;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -343,14 +405,14 @@ section {
 }
 
 .experience-title {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #1a1a2e;
 }
 
 .experience-company {
     font-size: 0.9rem;
-    color: #555;
+    color: #764ba2;
     margin-bottom: 0.5rem;
 }
 
@@ -358,6 +420,34 @@ section {
     font-size: 0.9rem;
     color: #555;
     line-height: 1.6;
+}
+
+.experience-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+    
+}
+
+.experience-icon-green {
+    background: #d1fae5;
+    color: #10b981;
+}
+
+.experience-icon-blue {
+    background: #e0f2fe;
+    color: #0284c7;
+}
+
+.experience-icon-purple {
+    background: #ede9fe;
+    color: #4f46e5;
 }
 
 /* Contact */
@@ -400,4 +490,12 @@ section {
 .contact-link:hover {
     background-color: rgba(255,255,255,0.3);
     transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
 }
