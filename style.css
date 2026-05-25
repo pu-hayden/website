@@ -333,6 +333,7 @@ section {
     grid-template-columns: auto 1fr;
     gap: 1.25rem;
     margin-bottom: 1rem;
+    max-width: 700px;
 }
 
 .experience-date {
@@ -357,4 +358,46 @@ section {
     font-size: 0.9rem;
     color: #555;
     line-height: 1.6;
+}
+
+/* Contact */
+.contact {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.contact .section-subtitle {
+   color: white;
+}
+
+.contact .section-heading {
+    color: white;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;   
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.contact-link:hover {
+    background-color: rgba(255,255,255,0.3);
+    transform: translateY(-2px);
 }
