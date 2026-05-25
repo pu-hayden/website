@@ -505,3 +505,12 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
+
+/* Responsive */
+
+@media (max-width: 680px) {
+    .hero h1 { font-size: 2rem; }
+    .about-grid { grid-template-columns: 1fr; }
+    .project-card { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+}
